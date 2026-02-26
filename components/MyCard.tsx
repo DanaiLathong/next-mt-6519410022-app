@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { 
   FaFacebookF, 
@@ -84,9 +85,12 @@ export default function MyCard() {
 
       </div>
 
-      <button className="mt-10 w-full bg-[#ff6a00] hover:bg-[#ff7a1a] transition rounded-[12px] py-3 text-black font-semibold tracking-wider">
-        HIRE ME !
-      </button>
+      <Link
+  href="/contactme"
+  className="mt-10 w-full bg-[#ff6a00] hover:bg-[#ff7a1a] transition rounded-[12px] py-3 text-black font-semibold tracking-wider text-center block"
+>
+  HIRE ME !
+</Link>
     </div>
   );
 }
